@@ -1,0 +1,11 @@
+C:\Users\Lee\Source\Repos\Kalkulator_testujaca\Kalkulator_testujaca\bin\Debug\Kalkulator_testujaca.exe.config
+C:\Users\Lee\Source\Repos\Kalkulator_testujaca\Kalkulator_testujaca\bin\Debug\Kalkulator_testujaca.exe
+C:\Users\Lee\Source\Repos\Kalkulator_testujaca\Kalkulator_testujaca\bin\Debug\Kalkulator_testujaca.pdb
+C:\Users\Lee\Source\Repos\Kalkulator_testujaca\Kalkulator_testujaca\obj\Debug\Kalkulator_testujaca.csprojAssemblyReference.cache
+C:\Users\Lee\Source\Repos\Kalkulator_testujaca\Kalkulator_testujaca\obj\Debug\Kalkulator_testujaca.Form1.resources
+C:\Users\Lee\Source\Repos\Kalkulator_testujaca\Kalkulator_testujaca\obj\Debug\Kalkulator_testujaca.panele.P_Trojkat.resources
+C:\Users\Lee\Source\Repos\Kalkulator_testujaca\Kalkulator_testujaca\obj\Debug\Kalkulator_testujaca.Properties.Resources.resources
+C:\Users\Lee\Source\Repos\Kalkulator_testujaca\Kalkulator_testujaca\obj\Debug\Kalkulator_testujaca.csproj.GenerateResource.cache
+C:\Users\Lee\Source\Repos\Kalkulator_testujaca\Kalkulator_testujaca\obj\Debug\Kalkulator_testujaca.csproj.CoreCompileInputs.cache
+C:\Users\Lee\Source\Repos\Kalkulator_testujaca\Kalkulator_testujaca\obj\Debug\Kalkulator_testujaca.exe
+C:\Users\Lee\Source\Repos\Kalkulator_testujaca\Kalkulator_testujaca\obj\Debug\Kalkulator_testujaca.pdb

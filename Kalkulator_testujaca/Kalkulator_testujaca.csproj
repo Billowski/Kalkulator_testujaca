@@ -46,14 +46,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="figury\Deltoid.cs" />
+    <Compile Include="figury\Kolo.cs" />
+    <Compile Include="figury\Kwadrat.cs" />
+    <Compile Include="figury\Prostokat.cs" />
+    <Compile Include="figury\Romb.cs" />
+    <Compile Include="figury\Rownoleglobok.cs" />
+    <Compile Include="figury\Trapez.cs" />
+    <Compile Include="figury\Trojkat.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="panele\P_Trojkat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="panele\P_Trojkat.Designer.cs">
+      <DependentUpon>P_Trojkat.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panele\P_Trojkat.resx">
+      <DependentUpon>P_Trojkat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +82,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,6 +96,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="zdjecia\deltoid.png" />
+    <Content Include="zdjecia\kwadrat.png" />
+    <Content Include="zdjecia\prostokat.png" />
+    <Content Include="zdjecia\romb.png" />
+    <Content Include="zdjecia\rownoleglobok.png" />
+    <Content Include="zdjecia\trapez.png" />
+    <Content Include="zdjecia\trojkat.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

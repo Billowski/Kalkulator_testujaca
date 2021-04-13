@@ -15,6 +15,12 @@ namespace Kalkulator_testujaca
         public Form1()
         {
             InitializeComponent();
+            MainPanel.Controls.Clear();
+            panele.P_Trojkat p = new panele.P_Trojkat();
+            p.TopLevel = false;
+            p.FormBorderStyle = FormBorderStyle.None;
+            MainPanel.Controls.Add(p);
+            p.Show();
         }
     }
 }

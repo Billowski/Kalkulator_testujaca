@@ -1,7 +1,7 @@
 ﻿
 namespace Kalkulator_testujaca.panele
 {
-    partial class P_Trojkat
+    partial class P_Romb
     {
         /// <summary>
         /// Required designer variable.
@@ -29,87 +29,69 @@ namespace Kalkulator_testujaca.panele
         /// </summary>
         private void InitializeComponent()
         {
-            this.trojkat_a = new System.Windows.Forms.TextBox();
-            this.trojkat_b = new System.Windows.Forms.TextBox();
-            this.trojkat_c = new System.Windows.Forms.TextBox();
-            this.trojkat_h = new System.Windows.Forms.TextBox();
+            this.romb_a = new System.Windows.Forms.TextBox();
+            this.romb_h = new System.Windows.Forms.TextBox();
+            this.romb_sina = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.trojkat_pole = new System.Windows.Forms.TextBox();
-            this.trojkat_obwod = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.romb_pole = new System.Windows.Forms.TextBox();
+            this.romb_obwod = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // trojkat_a
+            // romb_a
             // 
-            this.trojkat_a.Location = new System.Drawing.Point(54, 71);
-            this.trojkat_a.Name = "trojkat_a";
-            this.trojkat_a.Size = new System.Drawing.Size(100, 20);
-            this.trojkat_a.TabIndex = 0;
+            this.romb_a.Location = new System.Drawing.Point(54, 71);
+            this.romb_a.Name = "romb_a";
+            this.romb_a.Size = new System.Drawing.Size(100, 20);
+            this.romb_a.TabIndex = 0;
             // 
-            // trojkat_b
+            // romb_h
             // 
-            this.trojkat_b.Location = new System.Drawing.Point(54, 97);
-            this.trojkat_b.Name = "trojkat_b";
-            this.trojkat_b.Size = new System.Drawing.Size(100, 20);
-            this.trojkat_b.TabIndex = 1;
+            this.romb_h.Location = new System.Drawing.Point(54, 97);
+            this.romb_h.Name = "romb_h";
+            this.romb_h.Size = new System.Drawing.Size(100, 20);
+            this.romb_h.TabIndex = 1;
             // 
-            // trojkat_c
+            // romb_sina
             // 
-            this.trojkat_c.Location = new System.Drawing.Point(54, 123);
-            this.trojkat_c.Name = "trojkat_c";
-            this.trojkat_c.Size = new System.Drawing.Size(100, 20);
-            this.trojkat_c.TabIndex = 2;
-            // 
-            // trojkat_h
-            // 
-            this.trojkat_h.Location = new System.Drawing.Point(54, 149);
-            this.trojkat_h.Name = "trojkat_h";
-            this.trojkat_h.Size = new System.Drawing.Size(100, 20);
-            this.trojkat_h.TabIndex = 3;
+            this.romb_sina.Location = new System.Drawing.Point(54, 123);
+            this.romb_sina.Name = "romb_sina";
+            this.romb_sina.Size = new System.Drawing.Size(100, 20);
+            this.romb_sina.TabIndex = 2;
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(298, 356);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 23);
+            this.button1.Size = new System.Drawing.Size(117, 23);
             this.button1.TabIndex = 4;
-            this.button1.Text = "Oblicz pole";
+            this.button1.Text = "Oblicz pole z a oraz h";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // trojkat_pole
+            // romb_pole
             // 
-            this.trojkat_pole.Location = new System.Drawing.Point(298, 294);
-            this.trojkat_pole.Name = "trojkat_pole";
-            this.trojkat_pole.ReadOnly = true;
-            this.trojkat_pole.Size = new System.Drawing.Size(100, 20);
-            this.trojkat_pole.TabIndex = 5;
+            this.romb_pole.Location = new System.Drawing.Point(298, 294);
+            this.romb_pole.Name = "romb_pole";
+            this.romb_pole.ReadOnly = true;
+            this.romb_pole.Size = new System.Drawing.Size(100, 20);
+            this.romb_pole.TabIndex = 5;
             // 
-            // trojkat_obwod
+            // romb_obwod
             // 
-            this.trojkat_obwod.Location = new System.Drawing.Point(528, 294);
-            this.trojkat_obwod.Name = "trojkat_obwod";
-            this.trojkat_obwod.ReadOnly = true;
-            this.trojkat_obwod.Size = new System.Drawing.Size(100, 20);
-            this.trojkat_obwod.TabIndex = 6;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Kalkulator_testujaca.Properties.Resources.trojkat;
-            this.pictureBox1.Location = new System.Drawing.Point(226, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(477, 256);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
+            this.romb_obwod.Location = new System.Drawing.Point(528, 294);
+            this.romb_obwod.Name = "romb_obwod";
+            this.romb_obwod.ReadOnly = true;
+            this.romb_obwod.Size = new System.Drawing.Size(100, 20);
+            this.romb_obwod.TabIndex = 6;
             // 
             // label1
             // 
@@ -127,25 +109,16 @@ namespace Kalkulator_testujaca.panele
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(13, 13);
             this.label2.TabIndex = 9;
-            this.label2.Text = "b";
+            this.label2.Text = "h";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(35, 126);
+            this.label3.Location = new System.Drawing.Point(22, 126);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(13, 13);
+            this.label3.Size = new System.Drawing.Size(26, 13);
             this.label3.TabIndex = 10;
-            this.label3.Text = "c";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(35, 152);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(13, 13);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "h";
+            this.label3.Text = "sina";
             // 
             // label5
             // 
@@ -167,36 +140,55 @@ namespace Kalkulator_testujaca.panele
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(541, 356);
+            this.button2.Location = new System.Drawing.Point(298, 385);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(87, 23);
+            this.button2.Size = new System.Drawing.Size(129, 23);
             this.button2.TabIndex = 14;
-            this.button2.Text = "Oblicz obwód";
+            this.button2.Text = "Oblicz pole z a oraz sina";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // P_Trojkat
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Kalkulator_testujaca.Properties.Resources.romb;
+            this.pictureBox1.Location = new System.Drawing.Point(226, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(477, 256);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(541, 356);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(87, 23);
+            this.button3.TabIndex = 15;
+            this.button3.Text = "Oblicz obwód";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // P_Romb
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.trojkat_obwod);
-            this.Controls.Add(this.trojkat_pole);
+            this.Controls.Add(this.romb_obwod);
+            this.Controls.Add(this.romb_pole);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.trojkat_h);
-            this.Controls.Add(this.trojkat_c);
-            this.Controls.Add(this.trojkat_b);
-            this.Controls.Add(this.trojkat_a);
-            this.Name = "P_Trojkat";
-            this.Text = "P_Trojkat";
+            this.Controls.Add(this.romb_sina);
+            this.Controls.Add(this.romb_h);
+            this.Controls.Add(this.romb_a);
+            this.Name = "P_Romb";
+            this.Text = "P_Romb";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -205,20 +197,19 @@ namespace Kalkulator_testujaca.panele
 
         #endregion
 
-        private System.Windows.Forms.TextBox trojkat_a;
-        private System.Windows.Forms.TextBox trojkat_b;
-        private System.Windows.Forms.TextBox trojkat_c;
-        private System.Windows.Forms.TextBox trojkat_h;
+        private System.Windows.Forms.TextBox romb_a;
+        private System.Windows.Forms.TextBox romb_h;
+        private System.Windows.Forms.TextBox romb_sina;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox trojkat_pole;
-        private System.Windows.Forms.TextBox trojkat_obwod;
+        private System.Windows.Forms.TextBox romb_pole;
+        private System.Windows.Forms.TextBox romb_obwod;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }

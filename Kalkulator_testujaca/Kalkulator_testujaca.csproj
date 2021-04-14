@@ -54,11 +54,47 @@
     <Compile Include="figury\Rownoleglobok.cs" />
     <Compile Include="figury\Trapez.cs" />
     <Compile Include="figury\Trojkat.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Kalkulator figur plaskich.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Kalkulator figur plaskich.Designer.cs">
+      <DependentUpon>Kalkulator figur plaskich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="panele\P_Deltoid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="panele\P_Deltoid.designer.cs">
+      <DependentUpon>P_Deltoid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="panele\P_Kwadrat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="panele\P_Kwadrat.Designer.cs">
+      <DependentUpon>P_Kwadrat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="panele\P_Prostokat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="panele\P_Prostokat.designer.cs">
+      <DependentUpon>P_Prostokat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="panele\P_Romb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="panele\P_Romb.designer.cs">
+      <DependentUpon>P_Romb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="panele\P_Rownoleglobok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="panele\P_Rownoleglobok.designer.cs">
+      <DependentUpon>P_Rownoleglobok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="panele\P_Trapez.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="panele\P_Trapez.designer.cs">
+      <DependentUpon>P_Trapez.cs</DependentUpon>
     </Compile>
     <Compile Include="panele\P_Trojkat.cs">
       <SubType>Form</SubType>
@@ -68,8 +104,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Kalkulator figur plaskich.resx">
+      <DependentUpon>Kalkulator figur plaskich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panele\P_Deltoid.resx">
+      <DependentUpon>P_Deltoid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panele\P_Kwadrat.resx">
+      <DependentUpon>P_Kwadrat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panele\P_Prostokat.resx">
+      <DependentUpon>P_Prostokat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panele\P_Romb.resx">
+      <DependentUpon>P_Romb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panele\P_Rownoleglobok.resx">
+      <DependentUpon>P_Rownoleglobok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panele\P_Trapez.resx">
+      <DependentUpon>P_Trapez.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="panele\P_Trojkat.resx">
       <DependentUpon>P_Trojkat.cs</DependentUpon>

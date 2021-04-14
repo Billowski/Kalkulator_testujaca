@@ -2,24 +2,24 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Kalkulator_biblioteka
+namespace Kalkulator_testujaca
 {
     class Deltoid
     {
-        private float _d1;
-        private float _d2;
+        private float _e;
+        private float _f;
         private float _a;
         private float _b;
         private float P;
         private float O;
 
-        public void setD1(float d1)
+        public void setE(float e)
         {
-            _d1 = d1;
+            _e = e;
         }
-        public void setD2(float d2)
+        public void setF(float f)
         {
-            _d2 = d2;
+            _f = f;
         }
         public void setA(float a)
         {
@@ -31,7 +31,7 @@ namespace Kalkulator_biblioteka
         }
         public float poleDeltoid()
         {
-            P = (float)(0.5 * _d1 * _d2);
+            P = (float)(0.5 * _e * _f);
             return P;
         }
         public float obwodDeltoid()

@@ -1,7 +1,7 @@
 ﻿
 namespace Kalkulator_testujaca.panele
 {
-    partial class P_Trojkat
+    partial class P_Deltoid
     {
         /// <summary>
         /// Required designer variable.
@@ -29,14 +29,13 @@ namespace Kalkulator_testujaca.panele
         /// </summary>
         private void InitializeComponent()
         {
-            this.trojkat_a = new System.Windows.Forms.TextBox();
-            this.trojkat_b = new System.Windows.Forms.TextBox();
-            this.trojkat_c = new System.Windows.Forms.TextBox();
-            this.trojkat_h = new System.Windows.Forms.TextBox();
+            this.deltoid_e = new System.Windows.Forms.TextBox();
+            this.deltoid_f = new System.Windows.Forms.TextBox();
+            this.deltoid_a = new System.Windows.Forms.TextBox();
+            this.deltoid_b = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.trojkat_pole = new System.Windows.Forms.TextBox();
-            this.trojkat_obwod = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.deltoid_pole = new System.Windows.Forms.TextBox();
+            this.deltoid_obwod = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,36 +43,37 @@ namespace Kalkulator_testujaca.panele
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // trojkat_a
+            // deltoid_e
             // 
-            this.trojkat_a.Location = new System.Drawing.Point(54, 71);
-            this.trojkat_a.Name = "trojkat_a";
-            this.trojkat_a.Size = new System.Drawing.Size(100, 20);
-            this.trojkat_a.TabIndex = 0;
+            this.deltoid_e.Location = new System.Drawing.Point(54, 71);
+            this.deltoid_e.Name = "deltoid_e";
+            this.deltoid_e.Size = new System.Drawing.Size(100, 20);
+            this.deltoid_e.TabIndex = 0;
             // 
-            // trojkat_b
+            // deltoid_f
             // 
-            this.trojkat_b.Location = new System.Drawing.Point(54, 97);
-            this.trojkat_b.Name = "trojkat_b";
-            this.trojkat_b.Size = new System.Drawing.Size(100, 20);
-            this.trojkat_b.TabIndex = 1;
+            this.deltoid_f.Location = new System.Drawing.Point(54, 97);
+            this.deltoid_f.Name = "deltoid_f";
+            this.deltoid_f.Size = new System.Drawing.Size(100, 20);
+            this.deltoid_f.TabIndex = 1;
             // 
-            // trojkat_c
+            // deltoid_a
             // 
-            this.trojkat_c.Location = new System.Drawing.Point(54, 123);
-            this.trojkat_c.Name = "trojkat_c";
-            this.trojkat_c.Size = new System.Drawing.Size(100, 20);
-            this.trojkat_c.TabIndex = 2;
+            this.deltoid_a.Location = new System.Drawing.Point(54, 123);
+            this.deltoid_a.Name = "deltoid_a";
+            this.deltoid_a.Size = new System.Drawing.Size(100, 20);
+            this.deltoid_a.TabIndex = 2;
             // 
-            // trojkat_h
+            // deltoid_b
             // 
-            this.trojkat_h.Location = new System.Drawing.Point(54, 149);
-            this.trojkat_h.Name = "trojkat_h";
-            this.trojkat_h.Size = new System.Drawing.Size(100, 20);
-            this.trojkat_h.TabIndex = 3;
+            this.deltoid_b.Location = new System.Drawing.Point(54, 149);
+            this.deltoid_b.Name = "deltoid_b";
+            this.deltoid_b.Size = new System.Drawing.Size(100, 20);
+            this.deltoid_b.TabIndex = 3;
             // 
             // button1
             // 
@@ -85,31 +85,21 @@ namespace Kalkulator_testujaca.panele
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // trojkat_pole
+            // deltoid_pole
             // 
-            this.trojkat_pole.Location = new System.Drawing.Point(298, 294);
-            this.trojkat_pole.Name = "trojkat_pole";
-            this.trojkat_pole.ReadOnly = true;
-            this.trojkat_pole.Size = new System.Drawing.Size(100, 20);
-            this.trojkat_pole.TabIndex = 5;
+            this.deltoid_pole.Location = new System.Drawing.Point(298, 294);
+            this.deltoid_pole.Name = "deltoid_pole";
+            this.deltoid_pole.ReadOnly = true;
+            this.deltoid_pole.Size = new System.Drawing.Size(100, 20);
+            this.deltoid_pole.TabIndex = 5;
             // 
-            // trojkat_obwod
+            // deltoid_obwod
             // 
-            this.trojkat_obwod.Location = new System.Drawing.Point(528, 294);
-            this.trojkat_obwod.Name = "trojkat_obwod";
-            this.trojkat_obwod.ReadOnly = true;
-            this.trojkat_obwod.Size = new System.Drawing.Size(100, 20);
-            this.trojkat_obwod.TabIndex = 6;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Kalkulator_testujaca.Properties.Resources.trojkat;
-            this.pictureBox1.Location = new System.Drawing.Point(226, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(477, 256);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
+            this.deltoid_obwod.Location = new System.Drawing.Point(528, 294);
+            this.deltoid_obwod.Name = "deltoid_obwod";
+            this.deltoid_obwod.ReadOnly = true;
+            this.deltoid_obwod.Size = new System.Drawing.Size(100, 20);
+            this.deltoid_obwod.TabIndex = 6;
             // 
             // label1
             // 
@@ -118,16 +108,16 @@ namespace Kalkulator_testujaca.panele
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(13, 13);
             this.label1.TabIndex = 8;
-            this.label1.Text = "a";
+            this.label1.Text = "e";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(35, 100);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(13, 13);
+            this.label2.Size = new System.Drawing.Size(10, 13);
             this.label2.TabIndex = 9;
-            this.label2.Text = "b";
+            this.label2.Text = "f";
             // 
             // label3
             // 
@@ -136,7 +126,7 @@ namespace Kalkulator_testujaca.panele
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(13, 13);
             this.label3.TabIndex = 10;
-            this.label3.Text = "c";
+            this.label3.Text = "a";
             // 
             // label4
             // 
@@ -145,7 +135,7 @@ namespace Kalkulator_testujaca.panele
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(13, 13);
             this.label4.TabIndex = 11;
-            this.label4.Text = "h";
+            this.label4.Text = "b";
             // 
             // label5
             // 
@@ -175,7 +165,17 @@ namespace Kalkulator_testujaca.panele
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // P_Trojkat
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Kalkulator_testujaca.Properties.Resources.deltoid;
+            this.pictureBox1.Location = new System.Drawing.Point(226, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(477, 256);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
+            // P_Deltoid
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -188,14 +188,14 @@ namespace Kalkulator_testujaca.panele
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.trojkat_obwod);
-            this.Controls.Add(this.trojkat_pole);
+            this.Controls.Add(this.deltoid_obwod);
+            this.Controls.Add(this.deltoid_pole);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.trojkat_h);
-            this.Controls.Add(this.trojkat_c);
-            this.Controls.Add(this.trojkat_b);
-            this.Controls.Add(this.trojkat_a);
-            this.Name = "P_Trojkat";
+            this.Controls.Add(this.deltoid_b);
+            this.Controls.Add(this.deltoid_a);
+            this.Controls.Add(this.deltoid_f);
+            this.Controls.Add(this.deltoid_e);
+            this.Name = "P_Deltoid";
             this.Text = "P_Trojkat";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -205,13 +205,13 @@ namespace Kalkulator_testujaca.panele
 
         #endregion
 
-        private System.Windows.Forms.TextBox trojkat_a;
-        private System.Windows.Forms.TextBox trojkat_b;
-        private System.Windows.Forms.TextBox trojkat_c;
-        private System.Windows.Forms.TextBox trojkat_h;
+        private System.Windows.Forms.TextBox deltoid_e;
+        private System.Windows.Forms.TextBox deltoid_f;
+        private System.Windows.Forms.TextBox deltoid_a;
+        private System.Windows.Forms.TextBox deltoid_b;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox trojkat_pole;
-        private System.Windows.Forms.TextBox trojkat_obwod;
+        private System.Windows.Forms.TextBox deltoid_pole;
+        private System.Windows.Forms.TextBox deltoid_obwod;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

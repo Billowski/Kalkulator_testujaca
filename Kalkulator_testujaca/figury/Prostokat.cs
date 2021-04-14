@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Kalkulator_biblioteka
+namespace Kalkulator_testujaca
 {
     class Prostokat
     {

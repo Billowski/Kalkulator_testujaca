@@ -9,3 +9,9 @@ C:\Users\Lee\Source\Repos\Kalkulator_testujaca\Kalkulator_testujaca\obj\Debug\Ka
 C:\Users\Lee\Source\Repos\Kalkulator_testujaca\Kalkulator_testujaca\obj\Debug\Kalkulator_testujaca.csproj.CoreCompileInputs.cache
 C:\Users\Lee\Source\Repos\Kalkulator_testujaca\Kalkulator_testujaca\obj\Debug\Kalkulator_testujaca.exe
 C:\Users\Lee\Source\Repos\Kalkulator_testujaca\Kalkulator_testujaca\obj\Debug\Kalkulator_testujaca.pdb
+C:\Users\Lee\Source\Repos\Kalkulator_testujaca\Kalkulator_testujaca\obj\Debug\Kalkulator_testujaca.panele.P_Kwadrat.resources
+C:\Users\Lee\Source\Repos\Kalkulator_testujaca\Kalkulator_testujaca\obj\Debug\Kalkulator_testujaca.panele.P_Prostokat.resources
+C:\Users\Lee\Source\Repos\Kalkulator_testujaca\Kalkulator_testujaca\obj\Debug\Kalkulator_testujaca.panele.P_Romb.resources
+C:\Users\Lee\Source\Repos\Kalkulator_testujaca\Kalkulator_testujaca\obj\Debug\Kalkulator_testujaca.panele.P_Rownoleglobok.resources
+C:\Users\Lee\Source\Repos\Kalkulator_testujaca\Kalkulator_testujaca\obj\Debug\Kalkulator_testujaca.panele.P_Trapez.resources
+C:\Users\Lee\Source\Repos\Kalkulator_testujaca\Kalkulator_testujaca\obj\Debug\Kalkulator_testujaca.panele.P_Deltoid.resources

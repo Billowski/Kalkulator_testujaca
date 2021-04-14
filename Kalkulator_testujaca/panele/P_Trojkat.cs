@@ -21,10 +21,16 @@ namespace Kalkulator_testujaca.panele
         {
             Trojkat trojkat = new Trojkat();
             trojkat.setA((float)Convert.ToDouble(trojkat_a.Text));
-            trojkat.setB((float)Convert.ToDouble(trojkat_b.Text));
-            trojkat.setC((float)Convert.ToDouble(trojkat_c.Text));
             trojkat.setH((float)Convert.ToDouble(trojkat_h.Text));
             trojkat_pole.Text = Convert.ToString(trojkat.poleTrojkat());
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Trojkat trojkat = new Trojkat();
+            trojkat.setA((float)Convert.ToDouble(trojkat_a.Text));
+            trojkat.setB((float)Convert.ToDouble(trojkat_b.Text));
+            trojkat.setC((float)Convert.ToDouble(trojkat_c.Text));
             trojkat_obwod.Text = Convert.ToString(trojkat.obwodTrojkat());
         }
     }

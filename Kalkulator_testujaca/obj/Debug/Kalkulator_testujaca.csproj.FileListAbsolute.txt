@@ -15,3 +15,4 @@ C:\Users\Lee\Source\Repos\Kalkulator_testujaca\Kalkulator_testujaca\obj\Debug\Ka
 C:\Users\Lee\Source\Repos\Kalkulator_testujaca\Kalkulator_testujaca\obj\Debug\Kalkulator_testujaca.panele.P_Rownoleglobok.resources
 C:\Users\Lee\Source\Repos\Kalkulator_testujaca\Kalkulator_testujaca\obj\Debug\Kalkulator_testujaca.panele.P_Trapez.resources
 C:\Users\Lee\Source\Repos\Kalkulator_testujaca\Kalkulator_testujaca\obj\Debug\Kalkulator_testujaca.panele.P_Deltoid.resources
+C:\Users\Lee\Source\Repos\Kalkulator_testujaca\Kalkulator_testujaca\obj\Debug\Kalkulator_testujaca.panele.Blad.resources

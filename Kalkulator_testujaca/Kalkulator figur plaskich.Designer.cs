@@ -31,6 +31,7 @@ namespace Kalkulator_testujaca
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.MainPanel = new System.Windows.Forms.Panel();
             this.P_Trojkat = new System.Windows.Forms.ToolStripButton();
             this.P_Kwadrat = new System.Windows.Forms.ToolStripButton();
             this.P_Prostokat = new System.Windows.Forms.ToolStripButton();
@@ -38,7 +39,6 @@ namespace Kalkulator_testujaca
             this.P_Rownoleglobok = new System.Windows.Forms.ToolStripButton();
             this.P_Trapez = new System.Windows.Forms.ToolStripButton();
             this.P_Deltoid = new System.Windows.Forms.ToolStripButton();
-            this.MainPanel = new System.Windows.Forms.Panel();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,6 +59,13 @@ namespace Kalkulator_testujaca
             this.toolStrip1.Size = new System.Drawing.Size(800, 25);
             this.toolStrip1.TabIndex = 4;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // MainPanel
+            // 
+            this.MainPanel.Location = new System.Drawing.Point(0, 28);
+            this.MainPanel.Name = "MainPanel";
+            this.MainPanel.Size = new System.Drawing.Size(800, 421);
+            this.MainPanel.TabIndex = 5;
             // 
             // P_Trojkat
             // 
@@ -130,13 +137,6 @@ namespace Kalkulator_testujaca
             this.P_Deltoid.Text = "Deltoid";
             this.P_Deltoid.Click += new System.EventHandler(this.P_Deltoid_Click);
             // 
-            // MainPanel
-            // 
-            this.MainPanel.Location = new System.Drawing.Point(0, 28);
-            this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(800, 421);
-            this.MainPanel.TabIndex = 5;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -145,8 +145,9 @@ namespace Kalkulator_testujaca
             this.Controls.Add(this.MainPanel);
             this.Controls.Add(this.toolStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "b";
+            this.Text = "Kalkulator figur płaskich";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);

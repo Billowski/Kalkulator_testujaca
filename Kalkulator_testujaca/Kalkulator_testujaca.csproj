@@ -60,6 +60,12 @@
     <Compile Include="Kalkulator figur plaskich.Designer.cs">
       <DependentUpon>Kalkulator figur plaskich.cs</DependentUpon>
     </Compile>
+    <Compile Include="panele\Blad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="panele\Blad.Designer.cs">
+      <DependentUpon>Blad.cs</DependentUpon>
+    </Compile>
     <Compile Include="panele\P_Deltoid.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Kalkulator figur plaskich.resx">
       <DependentUpon>Kalkulator figur plaskich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panele\Blad.resx">
+      <DependentUpon>Blad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="panele\P_Deltoid.resx">
       <DependentUpon>P_Deltoid.cs</DependentUpon>

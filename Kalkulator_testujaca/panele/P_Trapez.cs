@@ -20,20 +20,43 @@ namespace Kalkulator_testujaca.panele
         private void button1_Click(object sender, EventArgs e)
         {
             Trapez trapez = new Trapez();
-            trapez.setA((float)Convert.ToDouble(trapez_a.Text));
-            trapez.setB((float)Convert.ToDouble(trapez_b.Text));
-            trapez.setH((float)Convert.ToDouble(trapez_h.Text));
-            trapez_pole.Text = Convert.ToString(trapez.poleTrapez());
+            bool resulta = float.TryParse(trapez_a.Text, out float a);
+            bool resultb = float.TryParse(trapez_b.Text, out float b);
+            bool resultc = float.TryParse(trapez_c.Text, out float c);
+            if (resulta && resultb && resultc)
+            {
+                trapez.setA(a);
+                trapez.setB(b);
+                trapez.setH(c);
+                trapez_pole.Text = Convert.ToString(trapez.poleTrapez());
+            }
+            else
+            {
+                Blad blad = new Blad();
+                blad.Show();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Trapez trapez = new Trapez();
-            trapez.setA((float)Convert.ToDouble(trapez_a.Text));
-            trapez.setB((float)Convert.ToDouble(trapez_b.Text));
-            trapez.setC((float)Convert.ToDouble(trapez_c.Text));
-            trapez.setD((float)Convert.ToDouble(trapez_d.Text));
-            trapez_obwod.Text = Convert.ToString(trapez.obwodTrapez());
+            bool resulta = float.TryParse(trapez_a.Text, out float a);
+            bool resultb = float.TryParse(trapez_b.Text, out float b);
+            bool resultc = float.TryParse(trapez_c.Text, out float c);
+            bool resultd = float.TryParse(trapez_c.Text, out float d);
+            if (resulta && resultb && resultc && resultd)
+            {
+                trapez.setA(a);
+                trapez.setB(b);
+                trapez.setC(c);
+                trapez.setD(d);
+                trapez_obwod.Text = Convert.ToString(trapez.obwodTrapez());
+            }
+            else
+            {
+                Blad blad = new Blad();
+                blad.Show();
+            }
         }
     }
 }

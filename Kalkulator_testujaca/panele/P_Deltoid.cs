@@ -20,17 +20,37 @@ namespace Kalkulator_testujaca.panele
         private void button1_Click(object sender, EventArgs e)
         {
             Deltoid deltoid = new Deltoid();
-            deltoid.setE((float)Convert.ToDouble(deltoid_e.Text));
-            deltoid.setF((float)Convert.ToDouble(deltoid_f.Text));
-            deltoid_pole.Text = Convert.ToString(deltoid.poleDeltoid());
+            bool resulted = float.TryParse(deltoid_e.Text, out float ed);
+            bool resultf = float.TryParse(deltoid_f.Text, out float f);
+            if (resulted && resultf)
+            {
+                deltoid.setE(ed);
+                deltoid.setF(f);
+                deltoid_pole.Text = Convert.ToString(deltoid.poleDeltoid());
+            }
+            else
+            {
+                Blad blad = new Blad();
+                blad.Show();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Deltoid deltoid = new Deltoid();
-            deltoid.setA((float)Convert.ToDouble(deltoid_a.Text));
-            deltoid.setB((float)Convert.ToDouble(deltoid_b.Text));
-            deltoid_obwod.Text = Convert.ToString(deltoid.obwodDeltoid());
+            bool resulta = float.TryParse(deltoid_a.Text, out float a);
+            bool resultb = float.TryParse(deltoid_b.Text, out float b);
+            if (resulta && resultb)
+            {
+                deltoid.setA(a);
+                deltoid.setB(b);
+                deltoid_obwod.Text = Convert.ToString(deltoid.obwodDeltoid());
+            } 
+            else
+            {
+                Blad blad = new Blad();
+                blad.Show();
+            }
         }
     }
 }

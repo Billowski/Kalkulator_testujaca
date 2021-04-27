@@ -20,17 +20,37 @@ namespace Kalkulator_testujaca.panele
         private void button1_Click(object sender, EventArgs e)
         {
             Prostokat prostokat = new Prostokat();
-            prostokat.setA((float)Convert.ToDouble(prostokat_a.Text));
-            prostokat.setB((float)Convert.ToDouble(prostokat_b.Text));
-            prostokat_pole.Text = Convert.ToString(prostokat.poleProstokat());
+            bool resulta = float.TryParse(prostokat_a.Text, out float a);
+            bool resultb = float.TryParse(prostokat_a.Text, out float b);
+            if (resulta && resultb)
+            {
+                prostokat.setA(a);
+                prostokat.setB(b);
+                prostokat_pole.Text = Convert.ToString(prostokat.poleProstokat());
+            }
+            else
+            {
+                Blad blad = new Blad();
+                blad.Show();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Prostokat prostokat = new Prostokat();
-            prostokat.setA((float)Convert.ToDouble(prostokat_a.Text));
-            prostokat.setB((float)Convert.ToDouble(prostokat_b.Text));
-            prostokat_obwod.Text = Convert.ToString(prostokat.obwodProstokat());
+            bool resulta = float.TryParse(prostokat_a.Text, out float a);
+            bool resultb = float.TryParse(prostokat_a.Text, out float b);
+            if (resulta && resultb)
+            {
+                prostokat.setA(a);
+                prostokat.setB(b);
+                prostokat_obwod.Text = Convert.ToString(prostokat.obwodProstokat());
+            }
+            else
+            {
+                Blad blad = new Blad();
+                blad.Show();
+            }
         }
     }
 }

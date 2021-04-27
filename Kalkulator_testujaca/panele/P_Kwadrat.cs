@@ -20,15 +20,32 @@ namespace Kalkulator_testujaca.panele
         private void button1_Click(object sender, EventArgs e)
         {
             Kwadrat kwadrat = new Kwadrat();
-            kwadrat.setA((float)Convert.ToDouble(kwadrat_a.Text));
-            kwadrat_pole.Text = Convert.ToString(kwadrat.poleKwadrat());
+            bool resulta = float.TryParse(kwadrat_a.Text, out float a);
+            if (resulta)
+            {
+                kwadrat.setA(a);
+                kwadrat_pole.Text = Convert.ToString(kwadrat.poleKwadrat());
+            } 
+            else
+            {
+                Blad blad = new Blad();
+                blad.Show();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Kwadrat kwadrat = new Kwadrat();
-            kwadrat.setA((float)Convert.ToDouble(kwadrat_a.Text));
-            kwadrat_obwod.Text = Convert.ToString(kwadrat.obwodKwadrat());
+            bool resulta = float.TryParse(kwadrat_a.Text, out float a);
+            if (resulta)
+            {
+                kwadrat.setA(a);
+                kwadrat_obwod.Text = Convert.ToString(kwadrat.obwodKwadrat());
+            } else 
+            {
+                Blad blad = new Blad();
+                blad.Show();
+            }
         }
     }
 }

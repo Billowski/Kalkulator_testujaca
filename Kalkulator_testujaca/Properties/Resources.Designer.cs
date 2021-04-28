@@ -73,6 +73,16 @@ namespace Kalkulator_testujaca.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap kolo {
+            get {
+                object obj = ResourceManager.GetObject("kolo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kwadrat {
             get {
                 object obj = ResourceManager.GetObject("kwadrat", resourceCulture);

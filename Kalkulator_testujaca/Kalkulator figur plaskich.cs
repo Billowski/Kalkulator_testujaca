@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DocumentFormat.OpenXml.Drawing;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -86,6 +87,16 @@ namespace Kalkulator_testujaca
         {
             MainPanel.Controls.Clear();
             panele.P_Deltoid p = new panele.P_Deltoid();
+            p.TopLevel = false;
+            p.FormBorderStyle = FormBorderStyle.None;
+            MainPanel.Controls.Add(p);
+            p.Show();
+        }
+
+        private void P_Kolo_Click(object sender, EventArgs e)
+        {
+            MainPanel.Controls.Clear();
+            panele.P_Kolo p = new panele.P_Kolo();
             p.TopLevel = false;
             p.FormBorderStyle = FormBorderStyle.None;
             MainPanel.Controls.Add(p);

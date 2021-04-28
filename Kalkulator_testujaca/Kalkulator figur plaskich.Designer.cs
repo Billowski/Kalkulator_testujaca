@@ -31,7 +31,6 @@ namespace Kalkulator_testujaca
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.MainPanel = new System.Windows.Forms.Panel();
             this.P_Trojkat = new System.Windows.Forms.ToolStripButton();
             this.P_Kwadrat = new System.Windows.Forms.ToolStripButton();
             this.P_Prostokat = new System.Windows.Forms.ToolStripButton();
@@ -39,6 +38,8 @@ namespace Kalkulator_testujaca
             this.P_Rownoleglobok = new System.Windows.Forms.ToolStripButton();
             this.P_Trapez = new System.Windows.Forms.ToolStripButton();
             this.P_Deltoid = new System.Windows.Forms.ToolStripButton();
+            this.P_Kolo = new System.Windows.Forms.ToolStripButton();
+            this.MainPanel = new System.Windows.Forms.Panel();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,19 +54,13 @@ namespace Kalkulator_testujaca
             this.P_Romb,
             this.P_Rownoleglobok,
             this.P_Trapez,
-            this.P_Deltoid});
+            this.P_Deltoid,
+            this.P_Kolo});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(800, 25);
             this.toolStrip1.TabIndex = 4;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // MainPanel
-            // 
-            this.MainPanel.Location = new System.Drawing.Point(0, 28);
-            this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(800, 421);
-            this.MainPanel.TabIndex = 5;
             // 
             // P_Trojkat
             // 
@@ -137,6 +132,23 @@ namespace Kalkulator_testujaca
             this.P_Deltoid.Text = "Deltoid";
             this.P_Deltoid.Click += new System.EventHandler(this.P_Deltoid_Click);
             // 
+            // P_Kolo
+            // 
+            this.P_Kolo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.P_Kolo.Image = ((System.Drawing.Image)(resources.GetObject("P_Kolo.Image")));
+            this.P_Kolo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.P_Kolo.Name = "P_Kolo";
+            this.P_Kolo.Size = new System.Drawing.Size(35, 22);
+            this.P_Kolo.Text = "Koło";
+            this.P_Kolo.Click += new System.EventHandler(this.P_Kolo_Click);
+            // 
+            // MainPanel
+            // 
+            this.MainPanel.Location = new System.Drawing.Point(0, 28);
+            this.MainPanel.Name = "MainPanel";
+            this.MainPanel.Size = new System.Drawing.Size(800, 421);
+            this.MainPanel.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -165,6 +177,7 @@ namespace Kalkulator_testujaca
         private System.Windows.Forms.ToolStripButton P_Rownoleglobok;
         private System.Windows.Forms.ToolStripButton P_Trapez;
         private System.Windows.Forms.ToolStripButton P_Deltoid;
+        private System.Windows.Forms.ToolStripButton P_Kolo;
     }
 }
 

@@ -52,5 +52,57 @@ namespace Kalkulator_testujaca.panele
                 blad.Show();
             }
         }
+
+        public void NMOn()
+        {
+            //Backgroud
+            this.BackColor = SystemColors.WindowFrame;
+
+            //TextFields
+            deltoid_e.BackColor = SystemColors.ControlDark;
+            deltoid_f.BackColor = SystemColors.ControlDark;
+            deltoid_a.BackColor = SystemColors.ControlDark;
+            deltoid_b.BackColor = SystemColors.ControlDark;
+            deltoid_pole.BackColor = SystemColors.ControlDark;
+            deltoid_obwod.BackColor = SystemColors.ControlDark;
+
+            //Labels
+            label1.ForeColor = SystemColors.ButtonHighlight;
+            label2.ForeColor = SystemColors.ButtonHighlight;
+            label3.ForeColor = SystemColors.ButtonHighlight;
+            label4.ForeColor = SystemColors.ButtonHighlight;
+            label5.ForeColor = SystemColors.ButtonHighlight;
+            label6.ForeColor = SystemColors.ButtonHighlight;
+
+            //Buttons
+            button1.BackColor = SystemColors.ScrollBar;
+            button2.BackColor = SystemColors.ScrollBar;
+        }
+
+        public void NMOff()
+        {
+            //Backgroud
+            this.BackColor = SystemColors.Control;
+
+            //TextFields
+            deltoid_e.BackColor = SystemColors.Window;
+            deltoid_f.BackColor = SystemColors.Window;
+            deltoid_a.BackColor = SystemColors.Window;
+            deltoid_b.BackColor = SystemColors.Window;
+            deltoid_pole.BackColor = SystemColors.Window;
+            deltoid_obwod.BackColor = SystemColors.Window;
+
+            //Labels
+            label1.ForeColor = SystemColors.ControlText;
+            label2.ForeColor = SystemColors.ControlText;
+            label3.ForeColor = SystemColors.ControlText;
+            label4.ForeColor = SystemColors.ControlText;
+            label5.ForeColor = SystemColors.ControlText;
+            label6.ForeColor = SystemColors.ControlText;
+
+            //Buttons
+            button1.BackColor = SystemColors.ControlLight;
+            button2.BackColor = SystemColors.ControlLight;
+        }
     }
 }

@@ -13,94 +13,141 @@ namespace Kalkulator_testujaca
 {
     public partial class Form1 : Form
     {
+        private panele.P_Trojkat pTrojkat = new panele.P_Trojkat();
+        private panele.P_Kwadrat pKwadrat = new panele.P_Kwadrat();
+        private panele.P_Prostokat pProstokat = new panele.P_Prostokat();
+        private panele.P_Romb pRomb = new panele.P_Romb();
+        private panele.P_Rownoleglobok pRownoleglobok = new panele.P_Rownoleglobok();
+        private panele.P_Trapez pTrapez = new panele.P_Trapez();
+        private panele.P_Deltoid pDeltoid = new panele.P_Deltoid();
+        private panele.P_Kolo pKolo = new panele.P_Kolo();
+
+        private bool NM_OnOff = false;
+
         public Form1()
         {
             InitializeComponent();
-            panele.P_Trojkat p = new panele.P_Trojkat();
-            p.TopLevel = false;
-            p.FormBorderStyle = FormBorderStyle.None;
-            MainPanel.Controls.Add(p);
-            p.Show();
+            //pTrojkat = new panele.P_Trojkat();
+            pTrojkat.TopLevel = false;
+            pTrojkat.FormBorderStyle = FormBorderStyle.None;
+            MainPanel.Controls.Add(pTrojkat);
+            pTrojkat.Show();
         }
 
         private void P_Trojkat_Click(object sender, EventArgs e)
         {
             MainPanel.Controls.Clear();
-            panele.P_Trojkat p = new panele.P_Trojkat();
-            p.TopLevel = false;
-            p.FormBorderStyle = FormBorderStyle.None;
-            MainPanel.Controls.Add(p);
-            p.Show();
+            //pTrojkat = new panele.P_Trojkat();
+            pTrojkat.TopLevel = false;
+            pTrojkat.FormBorderStyle = FormBorderStyle.None;
+            MainPanel.Controls.Add(pTrojkat);
+            pTrojkat.Show();
         }
 
         private void P_Kwadrat_Click(object sender, EventArgs e)
         {
             MainPanel.Controls.Clear();
-            panele.P_Kwadrat p = new panele.P_Kwadrat();
-            p.TopLevel = false;
-            p.FormBorderStyle = FormBorderStyle.None;
-            MainPanel.Controls.Add(p);
-            p.Show();
+            //pKwadrat = new panele.P_Kwadrat();
+            pKwadrat.TopLevel = false;
+            pKwadrat.FormBorderStyle = FormBorderStyle.None;
+            MainPanel.Controls.Add(pKwadrat);
+            pKwadrat.Show();
         }
 
         private void P_Prostokat_Click(object sender, EventArgs e)
         {
             MainPanel.Controls.Clear();
-            panele.P_Prostokat p = new panele.P_Prostokat();
-            p.TopLevel = false;
-            p.FormBorderStyle = FormBorderStyle.None;
-            MainPanel.Controls.Add(p);
-            p.Show();
+           // pProstokat = new panele.P_Prostokat();
+            pProstokat.TopLevel = false;
+            pProstokat.FormBorderStyle = FormBorderStyle.None;
+            MainPanel.Controls.Add(pProstokat);
+            pProstokat.Show();
         }
 
         private void P_Romb_Click(object sender, EventArgs e)
         {
             MainPanel.Controls.Clear();
-            panele.P_Romb p = new panele.P_Romb();
-            p.TopLevel = false;
-            p.FormBorderStyle = FormBorderStyle.None;
-            MainPanel.Controls.Add(p);
-            p.Show();
+            //pRomb = new panele.P_Romb();
+            pRomb.TopLevel = false;
+            pRomb.FormBorderStyle = FormBorderStyle.None;
+            MainPanel.Controls.Add(pRomb);
+            pRomb.Show();
         }
 
         private void P_Rownoleglobok_Click(object sender, EventArgs e)
         {
             MainPanel.Controls.Clear();
-            panele.P_Rownoleglobok p = new panele.P_Rownoleglobok();
-            p.TopLevel = false;
-            p.FormBorderStyle = FormBorderStyle.None;
-            MainPanel.Controls.Add(p);
-            p.Show();
+            //pRownoleglobok = new panele.P_Rownoleglobok();
+            pRownoleglobok.TopLevel = false;
+            pRownoleglobok.FormBorderStyle = FormBorderStyle.None;
+            MainPanel.Controls.Add(pRownoleglobok);
+            pRownoleglobok.Show();
         }
 
         private void P_Trapez_Click(object sender, EventArgs e)
         {
             MainPanel.Controls.Clear();
-            panele.P_Trapez p = new panele.P_Trapez();
-            p.TopLevel = false;
-            p.FormBorderStyle = FormBorderStyle.None;
-            MainPanel.Controls.Add(p);
-            p.Show();
+           // pTrapez = new panele.P_Trapez();
+            pTrapez.TopLevel = false;
+            pTrapez.FormBorderStyle = FormBorderStyle.None;
+            MainPanel.Controls.Add(pTrapez);
+            pTrapez.Show();
         }
 
         private void P_Deltoid_Click(object sender, EventArgs e)
         {
             MainPanel.Controls.Clear();
-            panele.P_Deltoid p = new panele.P_Deltoid();
-            p.TopLevel = false;
-            p.FormBorderStyle = FormBorderStyle.None;
-            MainPanel.Controls.Add(p);
-            p.Show();
+            //pDeltoid = new panele.P_Deltoid();
+            pDeltoid.TopLevel = false;
+            pDeltoid.FormBorderStyle = FormBorderStyle.None;
+            MainPanel.Controls.Add(pDeltoid);
+            pDeltoid.Show();
         }
 
         private void P_Kolo_Click(object sender, EventArgs e)
         {
             MainPanel.Controls.Clear();
-            panele.P_Kolo p = new panele.P_Kolo();
-            p.TopLevel = false;
-            p.FormBorderStyle = FormBorderStyle.None;
-            MainPanel.Controls.Add(p);
-            p.Show();
+           // pKolo = new panele.P_Kolo();
+            pKolo.TopLevel = false;
+            pKolo.FormBorderStyle = FormBorderStyle.None;
+            MainPanel.Controls.Add(pKolo);
+            pKolo.Show();
+        }
+
+        private void btnNM_Click(object sender, EventArgs e)
+        {
+            if (NM_OnOff == false) //NightMode ON
+            {
+                this.BackColor = SystemColors.WindowFrame;
+                toolStrip1.BackColor = SystemColors.ControlDarkDark;
+                pTrojkat.NMOn();
+                pKwadrat.NMOn();
+                pProstokat.NMOn();
+                pRomb.NMOn();
+                pRownoleglobok.NMOn();
+                pTrapez.NMOn();
+                pDeltoid.NMOn();
+                pKolo.NMOn();
+
+                //Zmiana stanu
+                NM_OnOff = true;
+            }
+            else //NightMode OFF
+            {
+                this.BackColor = SystemColors.Control;
+                toolStrip1.BackColor = SystemColors.Control;
+                pTrojkat.NMOff();
+                pKwadrat.NMOff();
+                pProstokat.NMOff();
+                pRomb.NMOff();
+                pRownoleglobok.NMOff();
+                pTrapez.NMOff();
+                pDeltoid.NMOff();
+                pKolo.NMOff();
+
+                //Zmiana stanu
+                NM_OnOff = false;
+            }
         }
     }
 }

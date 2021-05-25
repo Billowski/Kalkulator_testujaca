@@ -72,5 +72,59 @@ namespace Kalkulator_testujaca.panele
                 blad.Show();
             }
         }
+
+        public void NMOn()
+        {
+            //Backgroud
+            this.BackColor = SystemColors.WindowFrame;
+
+            //TextFields
+            rownoleglobok_a.BackColor = SystemColors.ControlDark;
+            rownoleglobok_b.BackColor = SystemColors.ControlDark;
+            rownoleglobok_h.BackColor = SystemColors.ControlDark;
+            rownoleglobok_sina.BackColor = SystemColors.ControlDark;
+            rownoleglobok_pole.BackColor = SystemColors.ControlDark;
+            rownoleglobok_obwod.BackColor = SystemColors.ControlDark;
+
+            //Labels
+            label1.ForeColor = SystemColors.ButtonHighlight;
+            label2.ForeColor = SystemColors.ButtonHighlight;
+            label3.ForeColor = SystemColors.ButtonHighlight;
+            label4.ForeColor = SystemColors.ButtonHighlight;
+            label5.ForeColor = SystemColors.ButtonHighlight;
+            label6.ForeColor = SystemColors.ButtonHighlight;
+
+            //Buttons
+            button1.BackColor = SystemColors.ScrollBar;
+            button2.BackColor = SystemColors.ScrollBar;
+            button3.BackColor = SystemColors.ScrollBar;
+        }
+
+        public void NMOff()
+        {
+            //Backgroud
+            this.BackColor = SystemColors.Control;
+
+            //TextFields
+            rownoleglobok_a.BackColor = SystemColors.Window;
+            rownoleglobok_b.BackColor = SystemColors.Window;
+            rownoleglobok_h.BackColor = SystemColors.Window;
+            rownoleglobok_sina.BackColor = SystemColors.Window;
+            rownoleglobok_pole.BackColor = SystemColors.Window;
+            rownoleglobok_obwod.BackColor = SystemColors.Window;
+
+            //Labels
+            label1.ForeColor = SystemColors.ControlText;
+            label2.ForeColor = SystemColors.ControlText;
+            label3.ForeColor = SystemColors.ControlText;
+            label4.ForeColor = SystemColors.ControlText;
+            label5.ForeColor = SystemColors.ControlText;
+            label6.ForeColor = SystemColors.ControlText;
+
+            //Buttons
+            button1.BackColor = SystemColors.ControlLight;
+            button2.BackColor = SystemColors.ControlLight;
+            button3.BackColor = SystemColors.ControlLight;
+        }
     }
 }

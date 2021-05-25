@@ -52,5 +52,46 @@ namespace Kalkulator_testujaca.panele
                 blad.Show();
             }
         }
+
+        public void NMOn()
+        {
+            //Backgroud
+            this.BackColor = SystemColors.WindowFrame;
+
+            //TextFields
+            prostokat_a.BackColor = SystemColors.ControlDark;
+            prostokat_b.BackColor = SystemColors.ControlDark;
+
+            //Labels
+            label1.ForeColor = SystemColors.ButtonHighlight;
+            label2.ForeColor = SystemColors.ButtonHighlight;
+            label5.ForeColor = SystemColors.ButtonHighlight;
+            label6.ForeColor = SystemColors.ButtonHighlight;
+
+            //Buttons
+            button1.BackColor = SystemColors.ScrollBar;
+            button2.BackColor = SystemColors.ScrollBar;
+        }
+
+        public void NMOff()
+        {
+            //Backgroud
+            this.BackColor = SystemColors.Control;
+
+            //TextFields
+            prostokat_a.BackColor = SystemColors.Window;
+            prostokat_b.BackColor = SystemColors.Window;
+
+            //Labels
+            label1.ForeColor = SystemColors.ControlText;
+            label2.ForeColor = SystemColors.ControlText;
+            label5.ForeColor = SystemColors.ControlText;
+            label6.ForeColor = SystemColors.ControlText;
+
+            //Buttons
+            button1.BackColor = SystemColors.ControlLight;
+            button2.BackColor = SystemColors.ControlLight;
+        }
+
     }
 }

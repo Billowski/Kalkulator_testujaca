@@ -40,13 +40,16 @@ namespace Kalkulator_testujaca
             this.P_Deltoid = new System.Windows.Forms.ToolStripButton();
             this.P_Kolo = new System.Windows.Forms.ToolStripButton();
             this.MainPanel = new System.Windows.Forms.Panel();
+            this.btnNM = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip1
             // 
+            this.toolStrip1.BackColor = System.Drawing.SystemColors.Control;
             this.toolStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.P_Trojkat,
             this.P_Kwadrat,
@@ -55,10 +58,11 @@ namespace Kalkulator_testujaca
             this.P_Rownoleglobok,
             this.P_Trapez,
             this.P_Deltoid,
-            this.P_Kolo});
+            this.P_Kolo,
+            this.btnNM});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(800, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(1067, 31);
             this.toolStrip1.TabIndex = 4;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -68,7 +72,7 @@ namespace Kalkulator_testujaca
             this.P_Trojkat.Image = ((System.Drawing.Image)(resources.GetObject("P_Trojkat.Image")));
             this.P_Trojkat.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.P_Trojkat.Name = "P_Trojkat";
-            this.P_Trojkat.Size = new System.Drawing.Size(46, 22);
+            this.P_Trojkat.Size = new System.Drawing.Size(58, 28);
             this.P_Trojkat.Text = "Trojkąt";
             this.P_Trojkat.Click += new System.EventHandler(this.P_Trojkat_Click);
             // 
@@ -78,7 +82,7 @@ namespace Kalkulator_testujaca
             this.P_Kwadrat.Image = ((System.Drawing.Image)(resources.GetObject("P_Kwadrat.Image")));
             this.P_Kwadrat.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.P_Kwadrat.Name = "P_Kwadrat";
-            this.P_Kwadrat.Size = new System.Drawing.Size(54, 22);
+            this.P_Kwadrat.Size = new System.Drawing.Size(67, 28);
             this.P_Kwadrat.Text = "Kwadrat";
             this.P_Kwadrat.Click += new System.EventHandler(this.P_Kwadrat_Click);
             // 
@@ -88,7 +92,7 @@ namespace Kalkulator_testujaca
             this.P_Prostokat.Image = ((System.Drawing.Image)(resources.GetObject("P_Prostokat.Image")));
             this.P_Prostokat.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.P_Prostokat.Name = "P_Prostokat";
-            this.P_Prostokat.Size = new System.Drawing.Size(61, 22);
+            this.P_Prostokat.Size = new System.Drawing.Size(75, 28);
             this.P_Prostokat.Text = "Prostokąt";
             this.P_Prostokat.Click += new System.EventHandler(this.P_Prostokat_Click);
             // 
@@ -98,7 +102,7 @@ namespace Kalkulator_testujaca
             this.P_Romb.Image = ((System.Drawing.Image)(resources.GetObject("P_Romb.Image")));
             this.P_Romb.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.P_Romb.Name = "P_Romb";
-            this.P_Romb.Size = new System.Drawing.Size(43, 22);
+            this.P_Romb.Size = new System.Drawing.Size(53, 28);
             this.P_Romb.Text = "Romb";
             this.P_Romb.Click += new System.EventHandler(this.P_Romb_Click);
             // 
@@ -108,7 +112,7 @@ namespace Kalkulator_testujaca
             this.P_Rownoleglobok.Image = ((System.Drawing.Image)(resources.GetObject("P_Rownoleglobok.Image")));
             this.P_Rownoleglobok.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.P_Rownoleglobok.Name = "P_Rownoleglobok";
-            this.P_Rownoleglobok.Size = new System.Drawing.Size(94, 22);
+            this.P_Rownoleglobok.Size = new System.Drawing.Size(118, 28);
             this.P_Rownoleglobok.Text = "Równoległobok";
             this.P_Rownoleglobok.Click += new System.EventHandler(this.P_Rownoleglobok_Click);
             // 
@@ -118,7 +122,7 @@ namespace Kalkulator_testujaca
             this.P_Trapez.Image = ((System.Drawing.Image)(resources.GetObject("P_Trapez.Image")));
             this.P_Trapez.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.P_Trapez.Name = "P_Trapez";
-            this.P_Trapez.Size = new System.Drawing.Size(44, 22);
+            this.P_Trapez.Size = new System.Drawing.Size(57, 28);
             this.P_Trapez.Text = "Trapez";
             this.P_Trapez.Click += new System.EventHandler(this.P_Trapez_Click);
             // 
@@ -128,7 +132,7 @@ namespace Kalkulator_testujaca
             this.P_Deltoid.Image = ((System.Drawing.Image)(resources.GetObject("P_Deltoid.Image")));
             this.P_Deltoid.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.P_Deltoid.Name = "P_Deltoid";
-            this.P_Deltoid.Size = new System.Drawing.Size(49, 22);
+            this.P_Deltoid.Size = new System.Drawing.Size(63, 28);
             this.P_Deltoid.Text = "Deltoid";
             this.P_Deltoid.Click += new System.EventHandler(this.P_Deltoid_Click);
             // 
@@ -138,25 +142,37 @@ namespace Kalkulator_testujaca
             this.P_Kolo.Image = ((System.Drawing.Image)(resources.GetObject("P_Kolo.Image")));
             this.P_Kolo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.P_Kolo.Name = "P_Kolo";
-            this.P_Kolo.Size = new System.Drawing.Size(35, 22);
+            this.P_Kolo.Size = new System.Drawing.Size(44, 28);
             this.P_Kolo.Text = "Koło";
             this.P_Kolo.Click += new System.EventHandler(this.P_Kolo_Click);
             // 
             // MainPanel
             // 
-            this.MainPanel.Location = new System.Drawing.Point(0, 28);
+            this.MainPanel.Location = new System.Drawing.Point(0, 34);
+            this.MainPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(800, 421);
+            this.MainPanel.Size = new System.Drawing.Size(1067, 518);
             this.MainPanel.TabIndex = 5;
+            // 
+            // btnNM
+            // 
+            this.btnNM.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.btnNM.Image = ((System.Drawing.Image)(resources.GetObject("btnNM.Image")));
+            this.btnNM.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnNM.Name = "btnNM";
+            this.btnNM.Size = new System.Drawing.Size(37, 28);
+            this.btnNM.Text = "NM";
+            this.btnNM.Click += new System.EventHandler(this.btnNM_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.MainPanel);
             this.Controls.Add(this.toolStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Kalkulator figur płaskich";
@@ -178,6 +194,7 @@ namespace Kalkulator_testujaca
         private System.Windows.Forms.ToolStripButton P_Trapez;
         private System.Windows.Forms.ToolStripButton P_Deltoid;
         private System.Windows.Forms.ToolStripButton P_Kolo;
+        private System.Windows.Forms.ToolStripButton btnNM;
     }
 }
 

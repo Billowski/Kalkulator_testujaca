@@ -23,6 +23,7 @@ namespace Kalkulator_testujaca
         private panele.P_Kolo pKolo = new panele.P_Kolo();
 
         private bool NM_OnOff = false;
+        private Font globalFont;
 
         public bool NightMode 
         {
@@ -38,6 +39,24 @@ namespace Kalkulator_testujaca
                 {
                     NightModeOff();
                 }
+            }
+        }
+
+        public Font GlobalFont 
+        {
+            get { return globalFont; }
+            set 
+            { 
+                globalFont = value;
+                List<Control> allControls = GetAllControls(this);
+                allControls = GetAllControls(pKwadrat, allControls);
+                allControls = GetAllControls(pProstokat, allControls);
+                allControls = GetAllControls(pRomb, allControls);
+                allControls = GetAllControls(pRownoleglobok, allControls);
+                allControls = GetAllControls(pTrapez, allControls);
+                allControls = GetAllControls(pDeltoid, allControls);
+                allControls = GetAllControls(pKolo, allControls);
+                allControls.ForEach(k => k.Font = value);
             }
         }
 
@@ -175,6 +194,30 @@ namespace Kalkulator_testujaca
             {
                 NightModeOff();
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //List<Control> allControls = GetAllControls(this);
+            //allControls.ForEach(k => k.Font = new System.Drawing.Font("Verdana", 12));
+        }
+
+        private List<Control> GetAllControls(Control container, List<Control> list)
+        {
+            foreach (Control c in container.Controls)
+            {
+
+                if (c.Controls.Count > 0)
+                    list = GetAllControls(c, list);
+                else
+                    list.Add(c);
+            }
+
+            return list;
+        }
+        private List<Control> GetAllControls(Control container)
+        {
+            return GetAllControls(container, new List<Control>());
         }
     }
 }

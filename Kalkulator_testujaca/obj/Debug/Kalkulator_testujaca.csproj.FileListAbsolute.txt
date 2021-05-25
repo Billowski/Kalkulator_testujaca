@@ -89,3 +89,7 @@ C:\Users\kamil\Source\Repos\Kalkulator_testujaca2\Kalkulator_testujaca\bin\Debug
 C:\Users\kamil\Source\Repos\Kalkulator_testujaca2\Kalkulator_testujaca\bin\Debug\DocumentFormat.OpenXml.dll
 C:\Users\kamil\Source\Repos\Kalkulator_testujaca2\Kalkulator_testujaca\bin\Debug\DocumentFormat.OpenXml.xml
 C:\Users\kamil\Source\Repos\Kalkulator_testujaca2\Kalkulator_testujaca\obj\Debug\Kalkulator_testujaca.csproj.CopyComplete
+C:\Users\Lee\Source\Repos\Kalkulator_testujaca\Kalkulator_testujaca\bin\Debug\Kalkulator_testujaca.dll.config
+C:\Users\Lee\Source\Repos\Kalkulator_testujaca\Kalkulator_testujaca\bin\Debug\Kalkulator_testujaca.dll
+C:\Users\Lee\Source\Repos\Kalkulator_testujaca\Kalkulator_testujaca\obj\Debug\Kalkulator_testujaca.Kalkulator.resources
+C:\Users\Lee\Source\Repos\Kalkulator_testujaca\Kalkulator_testujaca\obj\Debug\Kalkulator_testujaca.dll

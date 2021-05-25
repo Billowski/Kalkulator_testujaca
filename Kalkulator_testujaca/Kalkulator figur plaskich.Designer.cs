@@ -39,8 +39,8 @@ namespace Kalkulator_testujaca
             this.P_Trapez = new System.Windows.Forms.ToolStripButton();
             this.P_Deltoid = new System.Windows.Forms.ToolStripButton();
             this.P_Kolo = new System.Windows.Forms.ToolStripButton();
-            this.MainPanel = new System.Windows.Forms.Panel();
             this.btnNM = new System.Windows.Forms.ToolStripButton();
+            this.MainPanel = new System.Windows.Forms.Panel();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -146,14 +146,6 @@ namespace Kalkulator_testujaca
             this.P_Kolo.Text = "Koło";
             this.P_Kolo.Click += new System.EventHandler(this.P_Kolo_Click);
             // 
-            // MainPanel
-            // 
-            this.MainPanel.Location = new System.Drawing.Point(0, 34);
-            this.MainPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(1067, 518);
-            this.MainPanel.TabIndex = 5;
-            // 
             // btnNM
             // 
             this.btnNM.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
@@ -164,21 +156,23 @@ namespace Kalkulator_testujaca
             this.btnNM.Text = "NM";
             this.btnNM.Click += new System.EventHandler(this.btnNM_Click);
             // 
-            // Form1
+            // MainPanel
+            // 
+            this.MainPanel.Location = new System.Drawing.Point(0, 34);
+            this.MainPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.MainPanel.Name = "MainPanel";
+            this.MainPanel.Size = new System.Drawing.Size(1067, 518);
+            this.MainPanel.TabIndex = 5;
+            // 
+            // Kalkulator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.MainPanel);
             this.Controls.Add(this.toolStrip1);
-<<<<<<< HEAD
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.MaximizeBox = false;
-=======
->>>>>>> main
-            this.Name = "Form1";
-            this.Text = "Kalkulator figur płaskich";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "Kalkulator";
+            this.Size = new System.Drawing.Size(1067, 554);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);

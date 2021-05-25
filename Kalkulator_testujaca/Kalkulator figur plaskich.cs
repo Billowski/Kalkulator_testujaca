@@ -24,7 +24,8 @@ namespace Kalkulator_testujaca
 
         private bool NM_OnOff = false;
 
-        public Form1()
+
+        public Kalkulator()
         {
             InitializeComponent();
             //pTrojkat = new panele.P_Trojkat();

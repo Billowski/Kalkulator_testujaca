@@ -27,6 +27,10 @@ namespace Kalkulator_testujaca
         private Font globalFont;
         private Color globalFontColor;
 
+        private Font toolStripFont;
+        private Color toolStripForeColor;
+        private Color toolStripBackColor;
+
         public bool NightMode 
         {
             get { return NM_OnOff; }
@@ -65,6 +69,36 @@ namespace Kalkulator_testujaca
 
                 List<Control> allControls = GetReallyAllControls();
                 allControls.ForEach(k => k.ForeColor = value);
+            }
+        }
+
+        public Font ToolStripFont 
+        {
+            get { return toolStripFont; }
+            set 
+            {
+                toolStripFont = value;
+                toolStrip1.Font = value;
+            } 
+        }
+
+        public Color ToolStripForeColor 
+        {
+            get { return toolStripForeColor; }
+            set
+            {
+                toolStripForeColor = value;
+                toolStrip1.ForeColor = value;
+            }
+        }
+
+        public Color ToolStripBackColor 
+        {
+            get { return toolStripBackColor; }
+            set
+            {
+                toolStripBackColor = value;
+                toolStrip1.BackColor = value;
             }
         }
 

@@ -104,10 +104,5 @@ namespace Kalkulator_testujaca.panele
             button1.BackColor = SystemColors.ControlLight;
             button2.BackColor = SystemColors.ControlLight;
         }
-
-        private void P_Trojkat_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

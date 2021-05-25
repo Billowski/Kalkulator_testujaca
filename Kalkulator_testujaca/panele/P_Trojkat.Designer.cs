@@ -220,7 +220,6 @@ namespace Kalkulator_testujaca.panele
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "P_Trojkat";
             this.Text = "P_Trojkat";
-            this.Load += new System.EventHandler(this.P_Trojkat_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

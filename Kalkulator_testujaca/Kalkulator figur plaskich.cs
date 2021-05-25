@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Kalkulator_testujaca
 {
-    public partial class Form1 : Form
+    public partial class Kalkulator : UserControl
     {
-        public Form1()
+        public Kalkulator()
         {
             InitializeComponent();
             panele.P_Trojkat p = new panele.P_Trojkat();

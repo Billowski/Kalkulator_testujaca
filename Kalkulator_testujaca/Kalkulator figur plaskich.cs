@@ -22,8 +22,10 @@ namespace Kalkulator_testujaca
         private panele.P_Deltoid pDeltoid = new panele.P_Deltoid();
         private panele.P_Kolo pKolo = new panele.P_Kolo();
 
+
         private bool NM_OnOff = false;
         private Font globalFont;
+        private Color globalFontColor;
 
         public bool NightMode 
         {
@@ -48,15 +50,21 @@ namespace Kalkulator_testujaca
             set 
             { 
                 globalFont = value;
-                List<Control> allControls = GetAllControls(this);
-                allControls = GetAllControls(pKwadrat, allControls);
-                allControls = GetAllControls(pProstokat, allControls);
-                allControls = GetAllControls(pRomb, allControls);
-                allControls = GetAllControls(pRownoleglobok, allControls);
-                allControls = GetAllControls(pTrapez, allControls);
-                allControls = GetAllControls(pDeltoid, allControls);
-                allControls = GetAllControls(pKolo, allControls);
+
+                List<Control> allControls = GetReallyAllControls();
                 allControls.ForEach(k => k.Font = value);
+            }
+        }
+
+        public Color GlobalFontColor
+        {
+            get { return globalFontColor; }
+            set
+            {
+                globalFontColor = value;
+
+                List<Control> allControls = GetReallyAllControls();
+                allControls.ForEach(k => k.ForeColor = value);
             }
         }
 
@@ -219,5 +227,20 @@ namespace Kalkulator_testujaca
         {
             return GetAllControls(container, new List<Control>());
         }
+
+        private List<Control> GetReallyAllControls() 
+        {
+            List<Control> allControls = GetAllControls(this);
+            allControls = GetAllControls(pKwadrat, allControls);
+            allControls = GetAllControls(pProstokat, allControls);
+            allControls = GetAllControls(pRomb, allControls);
+            allControls = GetAllControls(pRownoleglobok, allControls);
+            allControls = GetAllControls(pTrapez, allControls);
+            allControls = GetAllControls(pDeltoid, allControls);
+            allControls = GetAllControls(pKolo, allControls);
+
+            return allControls;
+        }
+
     }
 }

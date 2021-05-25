@@ -51,7 +51,7 @@ namespace Kalkulator_testujaca.panele
             // 
             this.trojkat_a.BackColor = System.Drawing.SystemColors.Window;
             this.trojkat_a.Location = new System.Drawing.Point(72, 87);
-            this.trojkat_a.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.trojkat_a.Margin = new System.Windows.Forms.Padding(4);
             this.trojkat_a.Name = "trojkat_a";
             this.trojkat_a.Size = new System.Drawing.Size(132, 22);
             this.trojkat_a.TabIndex = 0;
@@ -59,7 +59,7 @@ namespace Kalkulator_testujaca.panele
             // trojkat_b
             // 
             this.trojkat_b.Location = new System.Drawing.Point(72, 119);
-            this.trojkat_b.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.trojkat_b.Margin = new System.Windows.Forms.Padding(4);
             this.trojkat_b.Name = "trojkat_b";
             this.trojkat_b.Size = new System.Drawing.Size(132, 22);
             this.trojkat_b.TabIndex = 1;
@@ -67,7 +67,7 @@ namespace Kalkulator_testujaca.panele
             // trojkat_c
             // 
             this.trojkat_c.Location = new System.Drawing.Point(72, 151);
-            this.trojkat_c.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.trojkat_c.Margin = new System.Windows.Forms.Padding(4);
             this.trojkat_c.Name = "trojkat_c";
             this.trojkat_c.Size = new System.Drawing.Size(132, 22);
             this.trojkat_c.TabIndex = 2;
@@ -75,7 +75,7 @@ namespace Kalkulator_testujaca.panele
             // trojkat_h
             // 
             this.trojkat_h.Location = new System.Drawing.Point(72, 183);
-            this.trojkat_h.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.trojkat_h.Margin = new System.Windows.Forms.Padding(4);
             this.trojkat_h.Name = "trojkat_h";
             this.trojkat_h.Size = new System.Drawing.Size(132, 22);
             this.trojkat_h.TabIndex = 3;
@@ -83,7 +83,7 @@ namespace Kalkulator_testujaca.panele
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(397, 438);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(116, 28);
             this.button1.TabIndex = 4;
@@ -94,7 +94,7 @@ namespace Kalkulator_testujaca.panele
             // trojkat_pole
             // 
             this.trojkat_pole.Location = new System.Drawing.Point(397, 362);
-            this.trojkat_pole.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.trojkat_pole.Margin = new System.Windows.Forms.Padding(4);
             this.trojkat_pole.Name = "trojkat_pole";
             this.trojkat_pole.ReadOnly = true;
             this.trojkat_pole.Size = new System.Drawing.Size(132, 22);
@@ -104,7 +104,7 @@ namespace Kalkulator_testujaca.panele
             // 
             this.trojkat_obwod.BackColor = System.Drawing.SystemColors.Control;
             this.trojkat_obwod.Location = new System.Drawing.Point(704, 362);
-            this.trojkat_obwod.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.trojkat_obwod.Margin = new System.Windows.Forms.Padding(4);
             this.trojkat_obwod.Name = "trojkat_obwod";
             this.trojkat_obwod.ReadOnly = true;
             this.trojkat_obwod.Size = new System.Drawing.Size(132, 22);
@@ -114,7 +114,7 @@ namespace Kalkulator_testujaca.panele
             // 
             this.pictureBox1.Image = global::Kalkulator_testujaca.Properties.Resources.trojkat;
             this.pictureBox1.Location = new System.Drawing.Point(301, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(636, 315);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -188,7 +188,7 @@ namespace Kalkulator_testujaca.panele
             this.button2.BackColor = System.Drawing.SystemColors.ControlLight;
             this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button2.Location = new System.Drawing.Point(721, 438);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(116, 28);
             this.button2.TabIndex = 14;
@@ -217,9 +217,10 @@ namespace Kalkulator_testujaca.panele
             this.Controls.Add(this.trojkat_c);
             this.Controls.Add(this.trojkat_b);
             this.Controls.Add(this.trojkat_a);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "P_Trojkat";
             this.Text = "P_Trojkat";
+            this.Load += new System.EventHandler(this.P_Trojkat_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

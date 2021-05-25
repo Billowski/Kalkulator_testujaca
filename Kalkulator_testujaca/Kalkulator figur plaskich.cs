@@ -24,6 +24,22 @@ namespace Kalkulator_testujaca
 
         private bool NM_OnOff = false;
 
+        public bool NightMode 
+        {
+            get { return NM_OnOff; }
+            set 
+            {
+                NM_OnOff = value;
+                if (value)
+                {
+                    NightModeOn();
+                }
+                else
+                {
+                    NightModeOff();
+                }
+            }
+        }
 
         public Kalkulator()
         {
@@ -115,39 +131,49 @@ namespace Kalkulator_testujaca
             pKolo.Show();
         }
 
+        public void NightModeOn() 
+        {
+            this.BackColor = SystemColors.WindowFrame;
+            toolStrip1.BackColor = SystemColors.ControlDarkDark;
+            pTrojkat.NMOn();
+            pKwadrat.NMOn();
+            pProstokat.NMOn();
+            pRomb.NMOn();
+            pRownoleglobok.NMOn();
+            pTrapez.NMOn();
+            pDeltoid.NMOn();
+            pKolo.NMOn();
+
+            //Zmiana stanu
+            NM_OnOff = true;
+        }
+
+        public void NightModeOff() 
+        {
+            this.BackColor = SystemColors.Control;
+            toolStrip1.BackColor = SystemColors.Control;
+            pTrojkat.NMOff();
+            pKwadrat.NMOff();
+            pProstokat.NMOff();
+            pRomb.NMOff();
+            pRownoleglobok.NMOff();
+            pTrapez.NMOff();
+            pDeltoid.NMOff();
+            pKolo.NMOff();
+
+            //Zmiana stanu
+            NM_OnOff = false;
+        }
+
         private void btnNM_Click(object sender, EventArgs e)
         {
             if (NM_OnOff == false) //NightMode ON
             {
-                this.BackColor = SystemColors.WindowFrame;
-                toolStrip1.BackColor = SystemColors.ControlDarkDark;
-                pTrojkat.NMOn();
-                pKwadrat.NMOn();
-                pProstokat.NMOn();
-                pRomb.NMOn();
-                pRownoleglobok.NMOn();
-                pTrapez.NMOn();
-                pDeltoid.NMOn();
-                pKolo.NMOn();
-
-                //Zmiana stanu
-                NM_OnOff = true;
+                NightModeOn();
             }
             else //NightMode OFF
             {
-                this.BackColor = SystemColors.Control;
-                toolStrip1.BackColor = SystemColors.Control;
-                pTrojkat.NMOff();
-                pKwadrat.NMOff();
-                pProstokat.NMOff();
-                pRomb.NMOff();
-                pRownoleglobok.NMOff();
-                pTrapez.NMOff();
-                pDeltoid.NMOff();
-                pKolo.NMOff();
-
-                //Zmiana stanu
-                NM_OnOff = false;
+                NightModeOff();
             }
         }
     }

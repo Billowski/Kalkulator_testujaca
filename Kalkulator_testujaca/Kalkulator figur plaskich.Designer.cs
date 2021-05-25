@@ -1,7 +1,7 @@
 ﻿
 namespace Kalkulator_testujaca
 {
-    partial class Form1
+    partial class Kalkulator
     {
         /// <summary>
         /// Wymagana zmienna projektanta.
@@ -29,7 +29,7 @@ namespace Kalkulator_testujaca
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Kalkulator));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.P_Trojkat = new System.Windows.Forms.ToolStripButton();
             this.P_Kwadrat = new System.Windows.Forms.ToolStripButton();
@@ -171,9 +171,12 @@ namespace Kalkulator_testujaca
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.MainPanel);
             this.Controls.Add(this.toolStrip1);
+<<<<<<< HEAD
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
+=======
+>>>>>>> main
             this.Name = "Form1";
             this.Text = "Kalkulator figur płaskich";
             this.toolStrip1.ResumeLayout(false);
